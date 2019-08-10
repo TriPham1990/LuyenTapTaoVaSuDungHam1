@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+<script>
+    let name = prompt('Enter the star name :');
+    let stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellation = ["Ursa Minor" , "Taurus" , "Cygnus" , "Lyra" , "Aquila" , "Ursa Major" , "Leo"];
+
+    function checkStars(nameStar){
+        let x = stars.indexOf(nameStar);
+        if (x !== -1){
+            alert(constellation[x]);
+        }else{
+            alert("the star you entered does not have!");
+        }
+    }
+    checkStars(name);
+
+</script>
+</body>
+</html>
